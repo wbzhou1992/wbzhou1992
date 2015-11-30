@@ -412,7 +412,7 @@ transition: color .3s ease-out, background-position .3s ease-out
 
 .widget__follow-list .item.is-facebook
 .icon {
-    background-position: 4px 4px;
+    background-position: 6px 6px;
 }
 
 .widget__follow-list .item.is-twitter
