@@ -388,7 +388,7 @@ transition: color .3s ease-out, background-position .3s ease-out
     height: 30px;
     text-indent: -9999px;
     background-color: transparent;
-    background-image: url(images/sprite-reseaux.png);
+    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-reseaux.png);
     background-repeat: no-repeat;
     margin-bottom: 8px;
     background-color: #1a1a1a;
