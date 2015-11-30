@@ -273,7 +273,7 @@ transition: color .3s ease-out, background-position .3s ease-out
 }
 
 
-/*缩略图和评论*/
+/*ç¼©ç•¥å›¾å’Œè¯„è®º*/
 .thumbnail {
     display: block;
     padding: 0;
@@ -388,7 +388,7 @@ transition: color .3s ease-out, background-position .3s ease-out
     height: 30px;
     text-indent: -9999px;
     background-color: transparent;
-    background-image: url(images/sprite-reseaux.png);
+    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-reseaux.png);
     background-repeat: no-repeat;
     margin-bottom: 8px;
     background-color: #1a1a1a;
@@ -412,7 +412,7 @@ transition: color .3s ease-out, background-position .3s ease-out
 
 .widget__follow-list .item.is-facebook
 .icon {
-    background-position: 4px 4px;
+    background-position: 6px 6px;
 }
 
 .widget__follow-list .item.is-twitter
