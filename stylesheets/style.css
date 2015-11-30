@@ -32,7 +32,11 @@ body{
     padding: 0;
     border: 0;
     text-indent: -9999px;
+<<<<<<< HEAD
     background: transparent url(content/sprite-common.jpg) -136px 14px no-repeat;
+=======
+    background: transparent url(content/sprite-common.png) -136px 14px no-repeat;
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
 }
 
 .search-header
@@ -192,7 +196,11 @@ transition: color .3s ease-out, background-position .3s ease-out
     font-size: 10px;
     color: #aaa;
     background-color: transparent;
+<<<<<<< HEAD
     background-image: url(conten/sprite-common.jpg);
+=======
+    background-image: url(content/sprite-common.png);
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
     background-repeat: no-repeat;
     float: left;
 }
@@ -254,7 +262,11 @@ transition: color .3s ease-out, background-position .3s ease-out
 .icon-bow{display: block;
 	width: 32px;
 	height: 21px;
+<<<<<<< HEAD
 	background: #fff url(content/index.jpg) no-repeat 50% 50%;
+=======
+	background: #fff url(content/index.png) no-repeat 50% 50%;
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
 	margin: 0 auto;
 	margin-top: -30px;
 	padding: 0 30px;
@@ -388,7 +400,11 @@ transition: color .3s ease-out, background-position .3s ease-out
     height: 30px;
     text-indent: -9999px;
     background-color: transparent;
+<<<<<<< HEAD
     background-image: url(content/sprite-reseaux.jpg);
+=======
+    background-image: url(content/sprite-reseaux.png);
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
     background-repeat: no-repeat;
     margin-bottom: 8px;
     background-color: #1a1a1a;
@@ -484,7 +500,11 @@ section.widget{
     letter-spacing: 3px;
     color: #1a1a1a;
     background-color: transparent;
+<<<<<<< HEAD
     background-image: url(content/sprite-common.jpg);
+=======
+    background-image: url(content/sprite-common.png);
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
     background-repeat: no-repeat;
 }
 .fsi-link
@@ -582,7 +602,11 @@ a {
 	font-size: 10px;
 	color: #000;
 	background-color: transparent;
+<<<<<<< HEAD
 	background-image: url(content/sprite-common.jpg);
+=======
+	background-image: url(content/sprite-common.png);
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
 	background-repeat: no-repeat;
 }
 .post-list .item.is-facebook{
@@ -687,7 +711,11 @@ body.single .post__footer .post__footer-social {
     font-size: 10px;
     color: #aaa;
     background-color: transparent;
+<<<<<<< HEAD
     background-image: url(content/sprite-common.jpg);
+=======
+    background-image: url(content/sprite-common.png);
+>>>>>>> 54ac3b10c86082ddcacbb5609203f741daab7373
     background-repeat: no-repeat;
 }
 
