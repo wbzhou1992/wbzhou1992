@@ -1,343 +1,595 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="discription" content="This is my page about lawel">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WBZHOU</title>
+    <meta charset="utf-8">
+    <meta name="discription" content="This is my page about lawel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBZHOU</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:500" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
 
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-<!-- Latest compiled and minified JavaScript -->
-
-
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script>$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-<script type="text/javascript">$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>
-
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
-
+    <script src="script.js"></script>
 </head>
 
-<body>
-<nav id="navigation" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="container-fluid"> 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-heart"></span> </a> </div>
-      
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"> <a href="#"> HOME <span class="sr-only">(current)</span> </a> </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> CATEGORIES <span class="caret"></span> </a>
-            <ul class="dropdown-menu" role="menu">
-              <li> <a href="#">BEAUTY</a> </li>
-              <li> <a href="#">LIFESTYLE</a> </li>
-              <li> <a href="#">VIDEO</a> </li>
-            </ul>
-          </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> TRAVELS <span class="caret"></span> </a>
-            <ul class="dropdown-menu" role="menu">
-              <li> <a href="#">BARCELONA</a> </li>
-              <li> <a href="#">BERLIN</a> </li>
-              <li> <a href="#">DALLAS</a> </li>
-              <li class="divider"></li>
-              <li> <a href="#">MIAMI</a> </li>
-              <li class="divider"></li>
-              <li> <a href="#">CHINA</a> </li>
-            </ul>
-          </li>
-        </ul>
-        <form class="search-header navbar-right" role="search">
-          <button type="submit" class="submit"> <span class="glyphicon glyphicon-search"></span> </button>
-          <input type="text" id="search" placeholder="SEARCH">
-        </form>
-      </div>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<div class="main-homepage">
-  <div class="container"> 
-    <!-- begin of homepage -->
-    <div class="homepage">
-      <h1 id="logo"> <a class="main-logo" href="#"><img src="images/icn-logo.png"></a> </h1>
-      <div class="main-media"> <img src="content/2.png">
-        <header class="header">
-          <h2> <a class="braid" href="#">BRAID IT UP</a> </h2>
-          <div class="info"> <span class="glyphicon glyphicon-map-marker">LONDON</span> /
-            <time>MAY 25,2015</time>
-          </div>
-        </header>
-        <p> I’ve always loved experimenting with my hair looks and get a little creative although I have to admit that I am not the handiest person ever. There are a few things I can do pretty well when it comes to hair styles, like a nice sleek pony tail, but even when it comes to curls : I can somehow…</p>
-        <div class="readmore"> <a href="#" class="cb-grey cssc-button">READ MORE</a></div>
-        <!-- Share btn group -->
-           <footer class="post__footer">
-           <div class="post__footer-item">
-           <ul class="post__footer-social no-background">
-           	<li>
-           		<a href="https://www.facebook.com/sharer/sharer.php?u=http://wbzhou1992.github.io/wbzhou1992/" target="_blank" class="item is-facebook" href="#" data-trigger="hover" data-container="body" data-toggle="popover" data-content="if you like it share it" data-placement="top">0</a>
-           		
-           	</li>
-           	<li>
-           		<a target="_blank" href="http://twitter.com/home/?status=WBZHOU http://wbzhou1992.github.io/wbzhou1992/" class="item is-twitter">2</a>
-           	</li>
-           	<li>
-           		<a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://wbzhou1992.github.io/wbzhou1992/" class="item is-pinterest">3</a>
-           	</li>
-           </ul>
-           	
-           </div>
-           <div class="post__footer-item">
-           	<div class="post__comments">
-           		<a href="https://www.weibo.com">
-           			<span>NO COMMENTS</span>
-           		</a>
-           	</div>
-           </div>
-         </footer>
-  </div>
-    </div>
-    <!-- end of homepage --> 
-  </div>
-</div>
-<div class="container">
-  <div id="carousel-example-captions" class="carousel slide" data-ride="carousel"> 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-captions" data-slide-to="1"></li>
-      <li data-target="#carousel-example-captions" data-slide-to="2"></li>
-    </ol>
-    
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active"> <img src="content/5.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/1.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/3.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/4.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/2.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/6.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/7.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      <div class="item"> <img src="content/8.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-	  <div class="item"> <img src="content/9.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-	  <div class="item"> <img src="content/10.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-	  <div class="item"> <img src="content/1517337.jpg" alt="...">
-        <div class="carousel-caption">...</div>
-      </div>
-      ... </div>
-    
-    <!-- Controls --> 
-    <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-</div>
-<!--beginning of nabars-->
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <h1 class="article-title">LAWEL</h1>
-      <div class="content-meta">
-        <time> <i class=""></i> 2015.5.28 </time>
-        <span> <i></i> GALAXY </span> <span> <i></i> JUPTER </span> <span>COMMENTS</span> 
-      </div>
-      <div id="content"> <img src="content/12.jpg" alt="">
-        <p> Arches Cluster, the densest known star cluster in the Milky Way, is located about 25,000 light-years from Earth in the constellation of Sagittarius (The Archer), close to the heart of our galaxy, the Milky Way. It's a fairly young astronomical object at between two and four million years old.
-          
-          The Arches cluster is so dense that in a region with a radius equal to the distance between the sun and its nearest star there would be over 100,000 stars! At least 150 stars within the cluster are among the brightest ever discovered in the Milky Way. These stars are so bright and massive that they will burn their fuel within a short time (on a cosmological scale that means just a few million years). Then they will die in spectacular supernova explosions. Due to the short lifetime of the stars in the cluster the gas between the stars contains an unusually high amount of heavier elements, which were produced by earlier generations of stars. </p>
-      </div>
-      
-      <nav>
-        <ul class="pager">
-          <li class="previous"> <a href="#"> <span aria-hidden="true"> <small>&lt;&lt;</small> </span> PREVIOUS </a> </li>
-          <li class="next"> <a href="#"> NEXT <span aria-hidden="true"> <small>&gt;&gt;</small> </span> </a> </li>
-        </ul>
-      </nav>
-      <ol class="breadcrumb">
-        <li> <a href="#">Home</a> </li>
-        <li> <a href="#">Library</a> </li>
-        <li class="active">Data</li>
-      </ol>
-      <span class="icon-bow"></span>
-      <section id="comments">
-        <h2>Comments</h2>
-        <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/33.JPG" alt=""></a>
-          <div class="media-body">
-            <h4 class="media-heading"> Hun Jeon <small>
-              <time>2015.5.28 上午</time>
-              </small> </h4>
-            row, each group of extra columns will, as one unit, wrap onto a new line.
-            Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying
-            <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/44.jpg" alt=""></a>
-              <div class="media-body">
-                <h4 class="media-heading"> Hun Jeon <small>
-                  <time>2015.5.28 上午</time>
-                  </small> </h4>
-                row, each group of extra columns will, as one unit, wrap onto a new line.
-                Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying
-                <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/55.jpg" alt=""></a>
-                  <div class="media-body">
-                    <h4 class="media-heading"> Hun Jeon <small>
-                      <time>2015.5.28 上午</time>
-                      </small> </h4>
-                    row, each group of extra columns will, as one unit, wrap onto a new line.
-                    Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying </div>
+<body onkeydown="onKeyDown()" oncontextmenu="return false">
+<header role="banner" id="header" class="centered-container header">
+    <nav class="mainnav" role="navigation">
+        <ul id="main-menu" class="mainmenu">
+            <li class="list link_home current"><a class="cm-item" href="index.html" rel="home">Home</a></li>
+            <li class="list withsubmenu">
+                <a class="cm-item" href="#">Categories</a>
+                <div class="submenu">
+                    <ul class="submenu__list">
+                        <li>
+                            <a href="#" class="cm-item has-img">
+                                <img src="http://www.kayture.com/wp-content/uploads/2015/08/dsc05933-28x28.jpg" alt=""/>
+                                <div class="label">
+                                    #Kaytips                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="cm-item has-img">
+                                <img src="http://www.kayture.com/wp-content/uploads/2015/12/dsc7582-28x28.jpg" alt=""/>
+                                <div class="label">
+                                    Beauty                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="cm-item has-img">
+                                <img src="http://www.kayture.com/wp-content/uploads/2015/12/photo-29-09-15-22-44-43-28x28.jpg" alt=""/>
+                                <div class="label">
+                                    Fashion                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="cm-item has-img">
+                                <img src="http://www.kayture.com/wp-content/uploads/2015/11/dsc54251-28x28.jpg" alt=""/>
+                                <div class="label">
+                                    Lifestyle                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="cm-item has-img">
+                                <img src="http://www.kayture.com/wp-content/uploads/2014/04/mg_7466-copie-28x28.jpg" alt=""/>
+                                <div class="label">
+                                    Video                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!--siderbar-->
-    <div class="col-md-4">
-      <aside id="sidebar">
-        <section>
-          <div class="title-line">
-            <h3>WBZHOU'S QUOTE</h3>
-          </div>
-          <p> Hi everyone! Hope you’re all having a great time and enjoyed a wonderful week. Ours was crazy, and that’s the least I can honestly say. This month has been a true roller coaster with so many fun adventures along the way. We’ve been travelling like mad and our heads are full of incredible </p>
-        </section>
-        <!--share widget-->
-        <section class="widget wigdet-share">
-          <div class="widget-title">FOLLOW</div>
-          <div class="widget-content">
-            <ul class="widget__follow-list">
-              <li class="item is-facebook"> <span class="icon">FACEBOOK</span> <span class="name">FACEBOOK</span> </li>
-              <li class="item is-twitter"> <span class="icon">TWITTER</span> <span class="name">TWITTER</span> </li>
-              <li class="item is-instagram"> <span class="icon">INSTAGRAM</span> <span class="name">INSTAGRAM</span> </li>
-              <li class="item is-google"> <span class="icon">GOOGLE+</span> <span class="name">GOOGLE+</span> </li>
-              <li class="item is-blogovin"> <span class="icon">BLOGLOVIN</span> <span class="name">BLOGLOVIN</span> </li>
-              <li class="item is-youtube"> <span class="icon">YOUTUBE</span> <span class="name">YOUTUBE</span> </li>
-            </ul>
-          </div>
-        </section>
-        <section class="widget widget_instagram">
-          <div class="widget-title">INSTAGRAM</div>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item"> <img src="content/11.jpg" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item active"> <img src="content/22.jpg" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item"> <img src="content/44.jpg" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item"> <img src="content/55.jpg" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item"> <img src="content/66.jpg" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item"> <img src="content/77.JPG" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-              <div class="item"> <img src="content/88.JPG" alt="...">
-                <div class="carousel-caption">...</div>
-              </div>
-            </div>
-            <!-- Controls --> 
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-        </section>
-        <section class="widget">
-          <div class="widget-title">TWITTER</div>
-          <div class="widget-content">
-<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2398858251&verifier=a4fa3086&dpc=1"></iframe>          </div>
-          <div id="datepiker"> <input id="datepiker"></div></div>
-        </section>
+            </li>
+            <li class="list withsubmenu">
+                <a class="cm-item" href="#">Travels</a>
+                <div class="submenu">
+                    <div class="submenu__list">
+                        <div class="submenu--scroll"></div>
+                        <ul class="submenu__list">
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/06/photo-04-06-15-21-09-39-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        barcelona                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/01/ktr_0114-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        berlin                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/07/ktr_0551-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        cannes                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/04/2012421202222-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Coachella                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/07/webb_ktr_0272-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Dallas                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/01/burj-al-arab-exterior-portrait-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        dubaï                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/01/8368413644_48bd17594b_b-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        florence                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/12/ktr_72101-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Geneva                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/08/webb_ktr_0944-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        greece                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/08/photo-03-07-14-10-34-59-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        India                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/08/webb_img_99111-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Italy                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/11/photo-21-09-15-16-38-28-copie1-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        london                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/12/dsc7582-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Los Angeles                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/12/webb_ktr_0522-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        mexico                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/11/villa-by-barton-g_1-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        miami                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/11/photo-26-09-15-06-38-27-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        milan                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/06/kayture-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Monaco                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/08/KTR_8779-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        moscow                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/12/KTR_1018-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        mumbai                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/07/KTR_9702-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Munich                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/09/cibelle-x-kristina-_-kenzo_051-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        new york                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/12/photo-29-09-15-22-44-43-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        paris                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/11/dsc54251-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Rome                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2014/09/webb_ktr_0773-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        shanghaï                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/01/photo-07-12-14-14-30-47-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Switzerland                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2011/11/P1010052-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        tokyo                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/09/Kristina-2a-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        vancouver                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/02/8441800927_e77d358e30_b-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        venice                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2013/04/295583_549690915051341_858968614_n-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        vienna                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cm-item has-img">
+                                    <img src="http://www.kayture.com/wp-content/uploads/2015/01/webb_ktr_7911-28x28.jpg" alt=""/>
+                                    <div class="label">
+                                        Zürich                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="list link_about withsubmenu">
+                <a class="cm-item" href="about.html">About</a>
+                <div class="submenu">
+                    <ul class="submenu__list">
+                        <li><a class="cm-item" href="#">Contact</a></li>
+                        <li><a class="cm-item" href="#">Press</a></li>
+                        <li><a class="cm-item" href="#">The team</a></li>
 
-      </aside>
-      
+                    </ul>
+                </div>
+            </li>
+            <li class="list withsubmenu">
+                <a class="cm-item" href="#">Follow</a>
+                <div class="submenu list-social">
+                    <ul class="submenu__list">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/wbzhou1992" class="cm-item is-facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/wbzhou1992" class="cm-item is-twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://instagram.com/wnzhou" class="cm-item is-instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="cm-item is-blogovin">Bloglovin</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="cm-item is-google">Google+</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="cm-item is-youtube">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="search-item withsubmenu">
+                <form role="search" action="index.html" method="get" class="search-header" id="bdcsMain">
+                    <button type="submit" class="sh-submit">Submit</button>
+                    <input type="text" name="s" id="search" value="" class="clrz_placeholder" placeholder="SEARCH" />
+                </form>
+            </li>
+        </ul>
+    </nav>
+	</header>
+
+<div class="main-homepage">
+    <div class="container">
+    <div class-="container-fluid">
+        <!-- begin of homepage -->
+        <div class="homepage">
+            <h1 id="logo"> <a class="main-logo" href="#"><img src="images/icn-logo.png"></a> </h1>
+            <hr>
+            <div class="main-media"> <img src="content/2.png">
+                <header class="index-header">
+                    <h2> <a class="braid" href="#">BRAID IT UP</a> </h2>
+                    <div class="info"> <span class="glyphicon glyphicon-map-marker">LONDON</span> /
+                        <time>MAY 25,2015</time>
+                    </div>
+                </header>
+                <p> I’ve always loved experimenting with my hair looks and get a little creative although I have to admit that I am not the handiest person ever. There are a few things I can do pretty well when it comes to hair styles, like a nice sleek pony tail, but even when it comes to curls : I can somehow…</p>
+                <div class="readmore"> <a href="#" class="cb-grey cssc-button">READ MORE</a></div>
+                <!-- Share btn group -->
+                <footer class="post__footer">
+                    <div class="post__footer-item">
+                        <ul class="post__footer-social no-background">
+                            <li>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://wbzhou1992.github.io/wbzhou1992/" target="_blank" class="item is-facebook" href="#" data-trigger="hover" data-container="body" data-toggle="popover" data-content="if you like it share it" data-placement="top">0</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://twitter.com/home/?status=WBZHOU http://wbzhou1992.github.io/wbzhou1992/" class="item is-twitter">2</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://pinterest.com/pin/create/button/?url=http://wbzhou1992.github.io/wbzhou1992/" class="item is-pinterest">3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="post__footer-item">
+                        <div class="post__comments">
+                            <a href="https://www.weibo.com">
+                                <span>NO COMMENTS</span>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- end of homepage -->
     </div>
-          </div>
-  </div>
+    </div>
+</div>
+<!-- beginning of the large carousel -->
+<div class="container">
+    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+            <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"> <img src="content/5.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/1.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/3.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/4.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/2.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/6.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/7.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/8.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/9.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/10.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            <div class="item"> <img src="content/1517337.jpg" alt="...">
+                <div class="carousel-caption">...</div>
+            </div>
+            ... </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+</div>
+<!--end of the large carousel-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="article-title">LAWEL</h1>
+            <div class="content-meta">
+                <time> <i class=""></i> 2015.5.28 </time>
+                <span> <i></i> GALAXY </span> <span> <i></i> JUPTER </span> <span>COMMENTS</span>
+            </div>
+            <div id="content"> <img src="content/12.jpg" alt="">
+<div>When it’s been announced that I would become the new ambassador for L’Oréal Paris, I literally couldn’t believe it. Was I misreading something? They must have had something wrong. How did that even happen… It felt way too crazy to be true. I grew up stealing L’Oréal make-up products from my mom’s bathroom cabinet and saving Doutzen’s Vogue pictures in a folder on the desktop of my computer for inspiration. Growing up, I would always go ahead and buy L’Oréal palettes and nail polishes as it was a feeling of luxury but still, at an affordable price. And now, it feels crazy that I am pronouncing these iconic words “Because I am Worth It” just like in the commercials. Am still pinching myself.
+
+When the announcement was made, we were headed towards the end of the fashion month, in Paris. And a few days before that, I received a HUGE and when I say huge I mean enormous bouquet of flowers from Cyril Chapuis, the president of L’Oréal Paris, welcoming me in the team. This was such an incredibly humbling gift… His personal note made me even more excited to join the family and take part in the growth of the brand, aiming to spread a positive, empowering message together with them.
+
+I’ve never been the typical “natural” girl as you would call it. I building a strong, beautiful make-up and it has always been a tool to express my creativity directly on my face. My make-up is the extension of my very own aesthetic and the punctuation to any outfit. I love applying eye liner, some red on lips, drawing a stronger brow… It’s almost like I am projecting on my face these different subtle nuances of my personality to appear directly in my look for people to discover. The beauty industry and cosmetics have always been associated to the words “artificial”, “superficial” but to me it’s magic. It’s colors, shades, textures… It’s  dream and a way to make our Mondays a bit less dull with a touch of blush on our cheeks. Thank got for make-up for making me feel like I still got it on days where I seriously just wanted to hide in my bed or the times when the right make-up, hair style and look just make you feel like you can conquer the world. You just feel invincible.
+
+Of course, embracing your beauty, just the way it is on it’s own, is the most wonderful thing in the world. Make-up, is a tool to pamper, to get creative, to have fun. To feel glamorous, fabulous, extravagant! So when the press release regarding my addition to the team went out public, I literally cried like a little baby. It was such a strong and beautiful moment. All these years of me going to school with so much more make-up that all my girlfriends and everyone mocking me in between classes for my somewhat “superficiality” are now going to be used and turned into a creative expression! Make-up is such a beautiful thing, it’s like a painter’s aquarelle and your face becomes art.
+
+In this shooting, I wanted to show you guys a bold, extravagant look that we created with L’Oréal Paris by using the products from the new #Extravaganza beauty line with an accent on the #FelineLook. So a strong cat eye (like I love them so much) using the SuperStar Eyeliner, big long eye lashes with the Volume Million Lashes mascara, a bronze/smokey palette and of course, a bright red lip from the Color Rich line in 392 Tanzania Rubis. And I am also happy to announce that you guys can win an Extravaganza beauty set allowing you to achieve this look by sharing on Instagram your Extravaganza fierce, feline look with the hashtag #Extravaganza #FelineLook + the tag @Lorealparisofficial for a chance to not only be regrammed by L’Oréal but also the opportunity to win the full gift box! I’ll see you there. xxx	</div>
+            </div>
+            <nav>
+                <ul class="pager">
+                    <li class="previous"> <a href="#"> <span aria-hidden="true"> <small>&lt;&lt;</small> </span> PREVIOUS </a> </li>
+                    <li class="next"> <a href="#"> NEXT <span aria-hidden="true"> <small>&gt;&gt;</small> </span> </a> </li>
+                </ul>
+            </nav>
+            <ol class="breadcrumb">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Library</a> </li>
+                <li class="active">Data</li>
+            </ol>
+            <span class="icon-bow"></span>
+            
+            <!--comments section-->
+            <section id="comments">
+                <h2>Comments</h2>
+                <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/33.JPG" alt=""></a>
+                    <div class="media-body">
+                        <h4 class="media-heading"> Hun Jeon <small><time>2015.5.28 上午</time></small> </h4>
+                        row, each group of extra columns will, as one unit, wrap onto a new line.
+                        Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying
+                <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/44.jpg" alt=""></a>
+                     <div class="media-body">
+                        <h4 class="media-heading"> Hun Jeon<small><time>2015.5.28 上午</time></small> </h4>
+                                row, each group of extra columns will, as one unit, wrap onto a new line.
+                                Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying
+                <div class="media"> <a href="#" class="pull-left" data-toggle="tooltip" data-placement="left" title="Hun Yeon"> <img class="avatar img-circle" src="https://raw.githubusercontent.com/wbzhou1992/wbzhou1992/gh-pages/content/55.jpg" alt=""></a>
+                     <div class="media-body">
+                         <h4 class="media-heading"> Hun Jeon <small><time>2015.5.28 上午</time></small> </h4>
+                                        row, each group of extra columns will, as one unit, wrap onto a new line.
+                                        Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--siderbar-->
+        <div class="col-md-4">
+            <aside id="sidebar">
+                <section>
+                    <div class="title-line">
+                        <h3>WBZHOU'S QUOTE</h3>
+                    </div>
+                    <p> Hi everyone! Hope you’re all having a great time and enjoyed a wonderful week. Ours was crazy, and that’s the least I can honestly say. This month has been a true roller coaster with so many fun adventures along the way. We’ve been travelling like mad and our heads are full of incredible </p>
+                </section>
+                <!--share widget-->
+                <section class="widget wigdet-share">
+                    <div class="widget-title">FOLLOW</div>
+                    <div class="widget-content">
+                        <ul class="widget__follow-list">
+                            <li class="item is-facebook"> <span class="icon">FACEBOOK</span> <span class="name">FACEBOOK</span> </li>
+                            <li class="item is-twitter"> <span class="icon">TWITTER</span> <span class="name">TWITTER</span> </li>
+                            <li class="item is-instagram"> <span class="icon">INSTAGRAM</span> <span class="name">INSTAGRAM</span> </li>
+                            <li class="item is-google"> <span class="icon">GOOGLE+</span> <span class="name">GOOGLE+</span> </li>
+                            <li class="item is-blogovin"> <span class="icon">BLOGLOVIN</span> <span class="name">BLOGLOVIN</span> </li>
+                            <li class="item is-youtube"> <span class="icon">YOUTUBE</span> <span class="name">YOUTUBE</span> </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="widget widget_instagram">
+                    <div class="widget-title">INSTAGRAM</div>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item"><a href="https://www.instagram.com/thecloverjoys" target="_blank"><img src="content/11.jpg" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item active"><a href="https://www.instagram.com/thecloverjoys" target="_blank"> <img src="content/22.jpg" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item"> <a href="https://www.instagram.com/thecloverjoys" target="_blank"><img src="content/44.jpg" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item"> <a href="https://www.instagram.com/thecloverjoys" target="_blank"><img src="content/55.jpg" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item"><a href="https://www.instagram.com/thecloverjoys" target="_blank"> <img src="content/66.jpg" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item"> <a href="https://www.instagram.com/thecloverjoys" target="_blank"><img src="content/77.JPG" alt="..."></a>
+                                <div class="carousel-caption">...</div>
+                            </div>
+                            <div class="item"> <img src="content/88.JPG" alt="...">
+                                <div class="carousel-caption">...</div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+                </section>
+                
+                <section class="widget">
+                    <div class="widget-title">WEIBO</div>
+                    <div class="widget-content">
+                        <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2398858251&verifier=a4fa3086&dpc=1"></iframe>          </div>
+                </section>
+            </aside>
+        </div>
+    </div>
 </div>
 <!--beginning of bottom-->
 <footer id="footer">
-  <div class="container">
-    <div class="footer-share centered-container">
-      <ul class="footer-social">
-        <li class="item"> <a href="https://twitter.com" class="fsi-link twitter"> TWITTER
-          <div>0</div>
-          </a> </li>
-        <li class="item"> <a href="https://www.facebook.com" class="facebook fsi-link"> FACEBOOK
-          <div>0</div>
-          </a> </li>
-        <li class="item"> <a href="https://www.instagram.com" class="instagram fsi-link"> INSTAGRAM
-          <div>121</div>
-          </a> </li>
-        <li class="item"> <a href="https://www.google.com" class="google fsi-link"> GOOGLE
-          <div>500</div>
-          </a> </li>
-        <li class="item"> <a href="https://www.youtube.com" class="youtube fsi-link"> YOUTUBE
-          <div>111</div>
-          </a> </li>
-        <li class="item"> <a href="http://www.bloglovin.com/blog/3879744/kayture" class="blogovin fsi-link"> BLOGOVIN
-          <div>157</div>
-          </a> </li>
-      </ul>
+    <div class="container">
+        <div class="footer-share">
+            <ul class="footer-social">
+                <li class="item"> <a href="https://twitter.com" class="fsi-link twitter"> TWITTER
+                    <div>0</div>
+                </a> </li>
+                <li class="item"> <a href="https://www.facebook.com" class="facebook fsi-link"> FACEBOOK
+                    <div>0</div>
+                </a> </li>
+                <li class="item"> <a href="https://www.instagram.com" class="instagram fsi-link"> INSTAGRAM
+                    <div>121</div>
+                </a> </li>
+                <li class="item"> <a href="https://www.google.com" class="google fsi-link"> GOOGLE
+                    <div>500</div>
+                </a> </li>
+                <li class="item"> <a href="https://www.youtube.com" class="youtube fsi-link"> YOUTUBE
+                    <div>111</div>
+                </a> </li>
+                <li class="item"> <a href="http://www.bloglovin.com/blog/3879744/kayture" class="blogovin fsi-link"> BLOGOVIN
+                    <div>157</div>
+                </a> </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </footer>
 <div class="f-share"> Currently v3.3.4 · GitHub · Examples · v2.3.2 docs · About · Expo · Blog · Issues · Releases </div>
 <aside id="bottom-footer">
-  <div class="container">
-    <div class="main-footer centered-container"> <a class="block-copyright">&copy;2011-2015 BLOG IS POWERED BY WBZHOU</a> <span class="lien_colorz">DESIGN BY WBZHOU</span> </div>
-  </div>
-
-
-
+    <div class="container">
+        <div class="main-footer centered-container"> <a class="block-copyright">&copy;2011-2015 BLOG IS POWERED BY WBZHOU</a> <span class="lien_colorz">DESIGN BY WBZHOU</span> </div>
+    </div>
 </aside>
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=7105647066980065612' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
 </body>
 </html>
