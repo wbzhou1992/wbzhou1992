@@ -1,0 +1,511 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+    font-family: Georgia;
+}
+@font-face {
+  font-family: 'GFS Didot';
+  font-style: normal;
+  font-weight: 400;
+  src: local('GFS Didot Regular'), local('GFSDidot-Regular'), url(Novecentowide-DemiBold-webfont.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+
+
+
+/*beginning of navbars*/
+.header {
+    border-bottom: 3px #d1d1d1 solid;
+    background-color: #1a1a1a;
+    z-index: 5;
+    height: 40px;
+    position: fixed;
+    top: 0;
+}
+.header h2{
+    text-align: center;
+    font-family: "Georgia";
+    letter-spacing: 2px;
+
+}
+.header a{
+    text-decoration: none;
+}
+
+.centered-container {
+    z-index: 1;
+	width:100%;
+	padding:0 12%;
+}
+
+
+.mainnav {
+    z-index: 5;
+    position: relative;
+    vertical-align: middle;
+	height: 40px;
+}
+.mainmenu {
+    height: 100%;
+	text-transform: uppercase;
+	font-family: "NovecentowideLightBold";
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.mainnav:hover {
+    z-index: 2;
+}
+
+.mainmenu>li {
+    margin: 0 50px 0 0;
+}
+
+.mainmenu>.search-item {
+    float: right;
+    margin: 0;
+}
+
+.mainmenu>li>a,.mainmenu>li {
+    float: left
+}
+
+.mainmenu>li>a {
+    display: block;
+    vertical-align: middle;
+}
+
+.mainmenu:hover,.mainmenu:hover>li {
+    z-index: 3;
+    position: relative;
+}
+
+.mainmenu
+.submenu {
+    display: none;
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -84px;
+    white-space: nowrap;
+    opacity: 0;
+    margin-top: 3px
+}
+
+.mainmenu > li > a:focus + .submenu,
+.mainmenu > li:hover
+.submenu {
+    visibility: visible;
+    opacity: 1;
+    display: block
+}
+
+.mainmenu .submenu
+a {
+    white-space: nowrap
+}
+
+.mainmenu .submenu .subcol > ul,
+.mainmenu .submenu
+.subcol {
+    float: left;
+}
+
+.cm-item {
+    display: block;
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+	font-family: 'Cormorant SC', serif;
+}
+
+.header .cm-item {
+    color: #fefefe;
+    line-height: 40px;
+}
+
+.cm-item:hover {
+    color: #aaa;
+	opacity:0.5;
+}
+
+.header .mainmenu .withsubmenu>a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 7px;
+    height: 4px;
+    margin-top: -2px;
+    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png) 0 0 no-repeat
+}
+
+.withsubmenu .submenu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    left: 0;
+    height: 8px;
+    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/icons/icn-before_submenu.png) center bottom no-repeat
+}
+
+.submenu {
+    position: relative;
+}
+.submenu--scroll {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0px;
+    padding-left: 0px;
+    bottom: 0;
+}
+.submenu--scroll:before {
+    content: "Scroll for more";
+    display: block;
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'GFS Didot';
+    font-size: 13px;
+    font-style: italic;
+    line-height: 38px;
+    color: #fff;
+    background-color: #1A1A1A;
+}
+
+.submenu__list {
+    width: 190px;
+    background-color: #1A1A1A;
+    max-height: 352px;
+    overflow: auto;
+	list-style-type:none;
+	padding: 0;
+}
+.submenu__list:hover .submenu--scroll:before {
+    opacity: 0;
+    bottom: 10px;
+    visibility: hidden;
+}
+
+.submenu__list .cm-item {
+    display: block;
+    height: 38px;
+    margin: 0;
+    text-align: center;
+    line-height: 38px;
+}
+
+.submenu__list > li + li .cm-item {
+    border-top: 1px #3a3a3a solid
+}
+
+.list-social .cm-item {
+    background-color: transparent;
+    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png);
+    background-repeat: no-repeat
+}
+
+.list-social .cm-item.is-facebook {
+    background-position: 11px -36px
+}
+
+.list-social .cm-item.is-twitter {
+    background-position: 11px -75px
+}
+
+.list-social .cm-item.is-instagram {
+    background-position: 11px -114px
+}
+
+.list-social .cm-item.is-blogovin {
+    background-position: 11px -153px
+}
+
+.list-social .cm-item.is-google {
+    background-position: 11px -192px
+}
+
+.list-social .cm-item.is-youtube {
+    background-position: 11px -231px
+}
+
+.cm-item.has-img
+img {
+    position: absolute;
+    top: 5px;
+    left: 5px
+}
+
+.cm-item.has-img
+.label {
+    padding: 0
+    35px;
+    overflow: hidden
+}f.
+
+.search-header {
+    position: relative
+}
+
+.sh-submit {
+    width: 29px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-indent: -9999px;
+    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png) -136px 12px no-repeat
+}
+
+
+
+.search-header
+input {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'GFS Didot';
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #fff;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+	text-align:center;
+    z-index: 5;
+	
+}
+input,button,select {
+	outline:0;
+    vertical-align: middle;
+}
+
+.search-header input::-webkit-input-placeholder {
+    color: #fff;
+    text-align: center;
+    font-family: 'GFS Didot';
+    font-size: 13px;
+
+}
+
+.search-header input:-moz-placeholder {
+    color: #fff;
+     text-align: center;
+    font-family: 'GFS Didot';
+    font-size: 13px;
+}
+
+.search-header input:-ms-input-placeholder {
+    color: #000;
+    text-align: center;
+    font-family: 'GFS Didot';
+    font-size: 13px;
+}
+.search-header{
+	margin: 0;
+    padding: 0;
+}
+
+/*end of navars*/
+
+
+
+/*end of search btn*/
+
+
+/*begin of main homepage*/
+.homepage img{
+	width: 99%;
+	padding-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.main-homepage{
+
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+}
+.homepage h1{
+	font-size: 56px;
+	font-family: "Georgia";
+	text-align: center;
+	letter-spacing: 10px;
+	line-height: 1;
+}
+
+.content-img{
+    width: 90%;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-logo img{
+
+    display: inline;
+    max-width: 55%;
+    margin: 5% 5% 0;
+    text-align: center;
+}
+
+
+/*beginning of footer */
+#bottom-footer{
+    background-color: #111;
+    margin-top: 30px;
+}
+
+.footer-share{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.footer-social{
+    list-style-type: none;
+    text-align: center;
+}
+.fsi-link {
+    display: block;
+    height: 30px;
+    padding: 3px 0 0 39px;
+    font-family: "Georgia";
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    background-color: transparent;
+    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png);
+    background-repeat: no-repeat;
+	text-decoration: none;
+}
+.fsi-link
+div {
+    color: #777;
+}
+.fsi-link:hover {
+    color: #777;
+    opacity: 0.5;
+	text-decoration: none;
+	-webkit-transition: color .3s ease-out, background-position .3s ease-out;
+    transition: color .3s ease-out, background-position .3s ease-out;
+}
+
+.fsi-link.facebook {
+    background-position: -270px 0;
+}
+
+.fsi-link.twitter {
+    background-position: -270px -70px;
+}
+
+.fsi-link.instagram {
+    background-position: -270px -140px;
+}
+
+.fsi-link.google {
+    background-position: -270px -210px;
+}
+
+.fsi-link.blogovin {
+    background-position: -270px -280px;
+}
+
+.fsi-link.youtube {
+    background-position: -270px -350px;
+}
+
+.f-share{
+    margin-top: 30px;
+    margin-bottom: 30px;
+	text-align: center;
+}
+
+.main-footer {
+    height: 48px;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 48px;
+    color: #aaa;
+}
+.block-copyright{
+    color: inherit;
+}
+.lien_colorz {
+    float: right;
+}
+.item{
+    display: inline-block;
+}
+
+
+
+
+
+@media screen and (max-width:906px) {
+    .mainnav{
+        position: relative;
+        min-height: 40px;
+
+    }
+    .mainnav ul{
+        width: 180px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        border-bottom:solid 3px rgb(209, 209, 209);
+        background: #1a1a1a url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 11px;
+
+    }
+    .mainnav ul.mainmenu li{
+        display: none;
+        margin: 0;
+    }
+    .mainnav ul.mainmenu .current{
+        display: block;
+    }
+    .mainnav .mainmenu a{
+        display: block;
+        padding:5px 5px 5px 32px;
+        text-align: left; 
+    }
+    .mainnav ul.mainmenu:hover{
+        background-image: none;
+    }
+    .mainnav ul.mainmenu:hover li.list{
+        display: block;
+        background-color: #1a1a1a;
+        margin: 0;
+        width: 170px;
+    }
+    .mainnav ul.mainmenu .search-item{
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: -90%;
+    }
+
+    .mainnav ul.mainmenu .current{
+
+        background:url(http://webdesignerwall.com/demo/responsive-menu/images/icon-check.png) no-repeat 10px 7px;
+    }
+    
+
+    
+}
