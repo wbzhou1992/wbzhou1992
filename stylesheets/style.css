@@ -1,13 +1,9 @@
 
-
-
 *{
 	margin:0;
 	padding:0;
 }
-body{
-    font-family: Georgia;
-}
+
 @font-face {
   font-family: 'GFS Didot';
   font-style: normal;
@@ -53,7 +49,7 @@ body{
 .mainmenu {
     height: 100%;
 	text-transform: uppercase;
-	font-family: "NovecentowideLightBold";
+	font-family: "GFS Didot";
     font-size: 10px;
     font-weight: normal;
     letter-spacing: 3px;
@@ -67,9 +63,11 @@ body{
     margin: 0 50px 0 0;
 }
 
-#search-item {
-    float: right;
-    margin: 0;
+.mainnav .search-item {
+    position: absolute;
+    right: 0; 
+    display: inline-block;
+    top: 0;
 }
 
 .mainmenu>li>a,.mainmenu>li {
@@ -369,6 +367,9 @@ input,button,select {
 
 
 /*beginning of footer */
+#footer{
+    border-top: 1px solid #e8e8e8
+}
 #bottom-footer{
     background-color: #111;
     margin-top: 30px;
@@ -503,11 +504,7 @@ div {
         margin: 0;
         width: 170px;    
     }
-    #search-item{
-        position: absolute;
-        top: 0px;
-        right: -150%;
-    }
+
     #main-menu ul{
         width: 170px;
         position: absolute;
