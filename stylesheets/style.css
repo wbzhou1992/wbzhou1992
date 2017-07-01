@@ -1,91 +1,77 @@
-
-*{
-	margin:0;
-	padding:0;
+* {
+    margin: 0;
+    padding: 0
 }
-
+body{
+	font-size: 10px;
+}
 @font-face {
-  font-family: 'GFS Didot';
-  font-style: normal;
-  font-weight: 400;
-  src: local('GFS Didot Regular'), local('GFSDidot-Regular'), url(Novecentowide-DemiBold-webfont.woff) format('woff');
-  unicode-range: U+0370-03FF;
+    font-family: 'GFS Didot';
+    font-style: normal;
+    font-weight: 400;
+    src: local('GFS Didot Regular'), local('GFSDidot-Regular'), url(Novecentowide-DemiBold-webfont.woff) format('woff');
+    unicode-range: U+0370-03FF
 }
-
-
-
-/*beginning of navbars*/
 .header {
     border-bottom: 3px #d1d1d1 solid;
     background-color: #1a1a1a;
     z-index: 5;
     height: 40px;
     position: fixed;
-    top: 0;
+    top: 0
 }
-.header h2{
+.header h2 {
     text-align: center;
-    font-family: "Georgia";
-    letter-spacing: 2px;
-
+    font-family: Georgia;
+    letter-spacing: 2px
 }
-.header a{
-    text-decoration: none;
+.header a {
+    text-decoration: none
 }
-
 .centered-container {
     z-index: 1;
-	width:100%;
-	padding:0 12%;
+    width: 100%;
+    padding: 0 12%
 }
-
-
 .mainnav {
     z-index: 5;
     position: relative;
     vertical-align: middle;
-	height: 40px;
+    height: 40px
 }
 .mainmenu {
     height: 100%;
-	text-transform: uppercase;
-	font-family: "GFS Didot";
-    font-size: 10px;
-    font-weight: normal;
-    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "GFS Didot";
+    font-weight: 400;
+    letter-spacing: 3px
 }
-
 .mainnav:hover {
-    z-index: 2;
+    z-index: 2
 }
-
 .mainmenu>li {
-    margin: 0 50px 0 0;
+    margin: 0 50px 0 0
 }
-
 .mainnav .search-item {
     position: absolute;
-    right: 0; 
+    right: 0;
     display: inline-block;
-    top: 0;
+    top: 0
 }
-
-.mainmenu>li>a,.mainmenu>li {
+.mainmenu>li,
+.mainmenu>li>a {
     float: left
 }
-
 .mainmenu>li>a {
     display: block;
-    vertical-align: middle;
+    vertical-align: middle
 }
-
-.mainmenu:hover,.mainmenu:hover>li {
+.mainmenu:hover,
+.mainmenu:hover>li {
     z-index: 3;
-    position: relative;
+    position: relative
 }
-
-.mainmenu
-.submenu {
+.mainmenu .submenu {
     display: none;
     visibility: hidden;
     z-index: 2;
@@ -97,46 +83,35 @@
     opacity: 0;
     margin-top: 3px
 }
-
-.mainmenu > li > a:focus + .submenu,
-.mainmenu > .list:hover
-.submenu {
+.mainmenu>.list:hover .submenu,
+.mainmenu>li>a:focus+.submenu {
     visibility: visible;
     opacity: 1;
     display: block
 }
-
-.mainmenu .submenu
-a {
+.mainmenu .submenu a {
     white-space: nowrap
 }
-
-.mainmenu .submenu .subcol > ul,
-.mainmenu .submenu
-.subcol {
-    float: left;
+.mainmenu .submenu .subcol,
+.mainmenu .submenu .subcol>ul {
+    float: left
 }
-
 .cm-item {
     display: block;
     position: relative;
-    font-size: 10px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
-	font-family: 'Cormorant SC', serif;
+    font-family: 'Cormorant SC', serif
 }
-
 .header .cm-item {
     color: #fefefe;
-    line-height: 40px;
+    line-height: 40px
 }
-
 .cm-item:hover {
     color: #aaa;
-	opacity:0.5;
+    opacity: .5
 }
-
 .header .mainmenu .withsubmenu>a:after {
     content: "";
     display: block;
@@ -146,9 +121,8 @@ a {
     width: 7px;
     height: 4px;
     margin-top: -2px;
-    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png) 0 0 no-repeat
+    background: transparent url(../content/sprite-common.png) 0 0 no-repeat
 }
-
 .withsubmenu .submenu:before {
     content: "";
     display: block;
@@ -157,19 +131,18 @@ a {
     right: 0;
     left: 0;
     height: 8px;
-    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/icons/icn-before_submenu.png) center bottom no-repeat
+    background: transparent url(../content/icn-before_submenu.png) center bottom no-repeat
 }
-
 .submenu {
-    position: relative;
+    position: relative
 }
 .submenu--scroll {
     position: absolute;
     z-index: 3;
     left: 0;
-    right: 0px;
-    padding-left: 0px;
-    bottom: 0;
+    right: 0;
+    padding-left: 0;
+    bottom: 0
 }
 .submenu--scroll:before {
     content: "Scroll for more";
@@ -180,87 +153,190 @@ a {
     left: 0;
     text-align: center;
     font-family: 'GFS Didot';
-    font-size: 13px;
     font-style: italic;
     line-height: 38px;
     color: #fff;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a
 }
-
 .submenu__list {
-    width: 170px;
-    background-color: #1A1A1A;
+    width: 165px;
+    background-color: #1a1a1a;
     max-height: 352px;
     overflow: auto;
-	list-style-type:none;
-	padding: 0;
+    list-style-type: none;
+    padding: 0
 }
 .submenu__list:hover .submenu--scroll:before {
     opacity: 0;
     bottom: 10px;
-    visibility: hidden;
+    visibility: hidden
 }
+
+.submenuwithbg li a{
+	text-align: center;
+}
+.submenuwithbg .label{
+	margin-left: 33px;
+}
+
 
 .submenu__list .cm-item {
     display: block;
     height: 38px;
     margin: 0;
     text-align: center;
-    line-height: 38px;
+    line-height: 38px
 }
 
-.submenu__list > li + li .cm-item {
+.submenu__list .back{
+	background-color: transparent;
+    background-image: url(../content/css_sprites.png);
+    background-repeat: no-repeat;
+
+}
+.cm-item.has-img .label {
+    overflow: hidden
+}
+.submenu__list .kaytips {
+    background-position: 0 -52px;
+}
+.submenu__list .beauty {
+    background-position: 0 -100px;  
+}
+.submenu__list .fashion {
+    background-position: 0 -148px;  
+}
+.submenu__list .lifestyle {
+    background-position: 0 -196px;  
+}
+.submenu__list .video {
+    background-position: 0 -244px;  
+}
+
+
+/*TRAVELS*/
+.submenu__list .barcelona {
+    background-position: 0 -52px;
+}
+.submenu__list .berlin {
+    background-position: 0 -100px;  
+}
+.submenu__list .cannes {
+    background-position: 0 -148px;  
+}
+.submenu__list .coachella {
+    background-position: 0 -196px;  
+}
+.submenu__list .dallas {
+    background-position: 0 -244px;  
+}
+.submenu__list .dubaï {
+    background-position: 0 -292px;  
+}
+.submenu__list .florence {
+    background-position: 0 -340px;  
+}
+.submenu__list .geneva {
+    background-position: 0 -388px;  
+}
+.submenu__list .greece {
+    background-position: 0 -436px;  
+}
+.submenu__list .india {
+    background-position: 0 -484px;  
+}
+.submenu__list .italy {
+    background-position: 0 -532px;  
+}
+.submenu__list .london {
+    background-position: 0 -580px;  
+}
+.submenu__list .losangeles {
+    background-position: 0 -628px;  
+}
+.submenu__list .mexico {
+    background-position: 0 -676px;  
+}
+.submenu__list .miami {
+    background-position: 0 -724px;  
+}
+.submenu__list .milan {
+    background-position: 0 -772px;  
+}
+.submenu__list .monaco {
+    background-position: 0 -820px;  
+}
+.submenu__list .moscow {
+    background-position: 0 -868px;  
+}
+.submenu__list .mumbai {
+    background-position: 0 -772px;  
+}
+.submenu__list .munich {
+    background-position: 0 -916px;  
+}
+.submenu__list .newyork {
+    background-position: 0 -964px;  
+}
+.submenu__list .paris {
+    background-position: 0 -1012px;  
+}
+.submenu__list .rome {
+    background-position: 0 -1060px;  
+}
+.submenu__list .shanghaï {
+    background-position: 0 -1108px;  
+}
+.submenu__list .switzerland {
+    background-position: 0 -1156px;  
+}
+.submenu__list .tokyo {
+    background-position: 0 -1204px;  
+}
+.submenu__list .vancouver {
+    background-position: 0 -1252px;  
+}
+.submenu__list .venice {
+    background-position: 0 -1300px;  
+}
+.submenu__list .vienna {
+    background-position: 0 -1348px;  
+}           
+.submenu__list .zürich {
+    background-position: 0 -1396px;  
+}
+
+
+.submenu__list>li+li .cm-item {
     border-top: 1px #3a3a3a solid
 }
-
 .list-social .cm-item {
     background-color: transparent;
-    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png);
+    background-image: url(../content/sprite-common.png);
     background-repeat: no-repeat
 }
-
 .list-social .cm-item.is-facebook {
     background-position: 11px -36px
 }
-
 .list-social .cm-item.is-twitter {
     background-position: 11px -75px
 }
-
 .list-social .cm-item.is-instagram {
     background-position: 11px -114px
 }
-
 .list-social .cm-item.is-blogovin {
     background-position: 11px -153px
 }
-
 .list-social .cm-item.is-google {
     background-position: 11px -192px
 }
-
 .list-social .cm-item.is-youtube {
     background-position: 11px -231px
 }
 
-.cm-item.has-img
-img {
-    position: absolute;
-    top: 5px;
-    left: 5px
-}
-
-.cm-item.has-img
-.label {
-    padding: 0
-    40px;
-    overflow: hidden
-}f.
-
-.search-header {
+f. .search-header {
     position: relative
 }
-
 .sh-submit {
     width: 29px;
     height: 40px;
@@ -268,254 +344,617 @@ img {
     padding: 0;
     border: 0;
     text-indent: -9999px;
-    background: transparent url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png) -136px 12px no-repeat
+    background: transparent url(../content/sprite-common.png) -136px 12px no-repeat
 }
-
-
-
-.search-header
-input {
+.search-header input {
     width: 100px;
     height: 40px;
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'GFS Didot';
-    font-size: 10px;
     font-weight: bolder;
     letter-spacing: 3px;
     color: #fff;
-    background: transparent;
+    background: 0 0;
     -webkit-font-smoothing: antialiased;
-	text-align:center;
-    z-index: 5;
-	
+    text-align: center;
+    z-index: 5
 }
-input,button,select {
-	outline:0;
-    vertical-align: middle;
+button,
+input,
+select {
+    outline: 0;
+    vertical-align: middle
 }
-
 .search-header input::-webkit-input-placeholder {
     color: #fff;
     text-align: center;
     font-family: 'GFS Didot';
-    font-size: 13px;
-
 }
-
 .search-header input:-moz-placeholder {
     color: #fff;
-     text-align: center;
+    text-align: center;
     font-family: 'GFS Didot';
-    font-size: 13px;
 }
-
 .search-header input:-ms-input-placeholder {
     color: #000;
     text-align: center;
     font-family: 'GFS Didot';
-    font-size: 13px;
 }
-.search-header{
-	margin: 0;
-    padding: 0;
+.search-header {
+    margin: 0;
+    padding: 0
 }
-
-/*end of navars*/
-
-
-
-/*end of search btn*/
-
-
-/*begin of main homepage*/
-.homepage img{
-	width: 99%;
-	padding-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
-
+.homepage img {
+    width: 99%;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto
 }
-.main-homepage{
-
-	padding-bottom: 30px;
-	margin-bottom: 40px;
+.main-homepage {
+    padding-bottom: 30px;
+    margin-bottom: 40px
 }
-.homepage h1{
-	font-size: 56px;
-	font-family: "Georgia";
-	text-align: center;
-	letter-spacing: 10px;
-	line-height: 1;
+.homepage h1 {
+    font-size: 56px;
+    font-family: Georgia;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 1
 }
-
-.content-img{
+.content-img {
     width: 90%;
     padding-bottom: 30px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
-
-.main-logo img{
-
+.main-logo img {
     display: inline;
     max-width: 55%;
     margin: 5% 5% 0;
-    text-align: center;
+    text-align: center
 }
-
-
-/*beginning of footer */
-#footer{
+#footer {
     border-top: 1px solid #e8e8e8
 }
-#bottom-footer{
+#bottom-footer {
     background-color: #111;
-    margin-top: 30px;
+    margin-top: 30px
 }
-
-.footer-share{
+.footer-share {
     margin-bottom: 30px;
     margin-top: 30px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8
 }
-.footer-social{
+.footer-social {
     list-style-type: none;
-    text-align: center;
+    text-align: center
 }
 .fsi-link {
     display: block;
     height: 30px;
     padding: 3px 0 0 39px;
-    font-family: "Georgia";
-    font-size: 10px;
-    font-weight: bold;
+    font-family: Georgia;
+    font-weight: 700;
     letter-spacing: 3px;
     color: #1a1a1a;
     background-color: transparent;
-    background-image: url(http://www.kayture.com/wp-content/themes/kayture/images/sprites/sprite-common.png);
+    background-image: url(../content/sprite-common.png);
     background-repeat: no-repeat;
-	text-decoration: none;
+    text-decoration: none
 }
-.fsi-link
-div {
-    color: #777;
+.fsi-link div {
+    color: #777
 }
 .fsi-link:hover {
     color: #777;
-    opacity: 0.5;
-	text-decoration: none;
-	-webkit-transition: color .3s ease-out, background-position .3s ease-out;
-    transition: color .3s ease-out, background-position .3s ease-out;
+    opacity: .5;
+    text-decoration: none;
+    -webkit-transition: color .3s ease-out, background-position .3s ease-out;
+    transition: color .3s ease-out, background-position .3s ease-out
 }
-
 .fsi-link.facebook {
-    background-position: -270px 0;
+    background-position: -270px 0
 }
-
 .fsi-link.twitter {
-    background-position: -270px -70px;
+    background-position: -270px -70px
 }
-
 .fsi-link.instagram {
-    background-position: -270px -140px;
+    background-position: -270px -140px
 }
-
 .fsi-link.google {
-    background-position: -270px -210px;
+    background-position: -270px -210px
 }
-
 .fsi-link.blogovin {
-    background-position: -270px -280px;
+    background-position: -270px -280px
 }
-
 .fsi-link.youtube {
-    background-position: -270px -350px;
+    background-position: -270px -350px
 }
-
-.f-share{
+.f-share {
     margin-top: 30px;
     margin-bottom: 30px;
-	text-align: center;
+    text-align: center
 }
-
 .main-footer {
     height: 48px;
     font-family: Arial;
-    font-size: 11px;
+   
     line-height: 48px;
-    color: #aaa;
+    color: #aaa
 }
-.block-copyright{
-    color: inherit;
+
+.block-copyright {
+    color: inherit
 }
 .lien_colorz {
-    float: right;
+    float: right
 }
-.item{
-    display: inline-block;
+.item {
+    display: inline-block
 }
-
-
-
-
-
-@media screen and (max-width:906px) {
-    .mainnav{
+@media screen and (max-width: 906px) {
+    .mainnav {
         position: relative;
-        min-height: 40px;
-
-
+        min-height: 40px
     }
-    #main-menu{
-        width: 180px;
+    #main-menu {
+        width: 165px;
         position: absolute;
+        text-align: 
         padding: 0;
-        border-bottom:solid 3px rgb(209, 209, 209);
-        background: #1a1a1a url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 11px;
+        border-bottom: solid 3px #d1d1d1;
+        background: #1a1a1a url(../content/icon-menu.png) no-repeat 10px 11px
     }
-    .mainnav ul.mainmenu .list{
+    .mainnav ul.mainmenu .list {
         display: none;
-        margin: 0;
+        margin: 0
     }
-    .mainnav ul.mainmenu .current{
-        display: block;
+    .mainnav ul.mainmenu .current {
+        display: block
     }
-    .mainnav .mainmenu .list a{
-        padding: 0 5px 5px 25px;
+    .mainnav .mainmenu .list a {
+    	padding: 0 15px;
     }
-    .mainnav .mainmenu  a{
-
+    .mainnav ul.mainmenu:hover {
+        background-image: none
     }
-    .mainnav ul.mainmenu:hover{
-        background-image: none;
-    }
-    .mainnav .mainmenu:hover .list{
+    .mainnav .mainmenu:hover .list {
         display: block;
         background-color: #1a1a1a;
         margin: 0;
+        padding: 0 0 5px;
         width: 150px;
-        text-align: center;
+        text-align: center
     }
-    .submenu__list >li:hover{
+    .submenu__list>li:hover {
         visibility: visible;
         background-color: #1a1a1a;
         margin: 0;
-        width: 170px;    
+        width: 165px
     }
-
-    #main-menu ul{
-        width: 170px;
+    .submenuwithbg li a{
+	text-align: center;
+}
+.submenuwithbg .label{
+	margin-left: 33px;
+}
+    #main-menu ul {
+        width: 150px;
         position: absolute;
         padding: 0;
-        left:160px;
-        border-bottom:solid 3px rgb(209, 209, 209);
+        left: 160px;
+        border-bottom: solid 3px #d1d1d1
     }
-    .submenu--scroll:before{
-        display: none;
+    .submenu--scroll:before {
+        display: none
     }
     .withsubmenu .submenu:before {
-        display: none;
+        display: none
     }
+}
+.main-media p {
+    margin-bottom: 50px
+}
+.info {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #aaa
+}
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    display: inline;
+    max-width: 100%;
+    height: auto
+}
+.homepage img {
+    width: 99%;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto
+}
+.main-homepage {
+    padding-bottom: 30px;
+    margin-bottom: 40px
+}
+
+.main-logo img {
+    display: inline;
+    max-width: 55%;
+    margin: 5% 5% 0;
+    text-align: center
+}
+
+.index-header {
+    text-align: center
+}
+.index-header h2 {
+    text-align: center;
+    font-family: Georgia;
+    letter-spacing: 2px
+}
+.index-header a {
+    text-decoration: none
+}
+.index-header .braid {
+    margin-top: 38px
+}
+.index-header .braid {
+    display: inline-block;
+    margin-bottom: 19px
+}
+.braid {
+    display: block;
+    margin: 2px 0 10px;
+    color: #1a1a1a
+}
+.braid:hover {
+    color: #cdcbcb;
+    opacity: .5
+}
+.readmore {
+    text-align: center;
+    margin-bottom: 50px
+}
+.readmore a {
+    text-decoration: none
+}
+.cb-grey {
+    height: 30px;
+    padding: 0 30px;
+    border: 1px #e5e5e5 solid;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #000
+}
+.cb-grey:hover {
+    color: #fff;
+    background-color: #aaa;
+    opacity: .5
+}
+.cb-grey:hover {
+    transition: color .3s ease-out, background-position .3s ease-out
+}
+.cssc-button {
+    display: inline-block
+}
+.post__footer-item {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top
+}
+.post__footer-social .item {
+    display: block;
+    width: 30px;
+    padding: 32px 0 0;
+    text-align: center;
+    font-family: NovecentowideNormalRegular;
+    color: #aaa;
+    background-color: transparent;
+    background-image: url(../content/sprite-common.png);
+    background-repeat: no-repeat;
+    float: left
+}
+.article-title {
+    margin-bottom: 30px
+}
+#content {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+    text-indent: 30px
+}
+.content-meta {
+    margin-bottom: 30px
+}
+.content-meta span,
+.content-meta time {
+    color: #828282;
+    margin-right: 10px
+}
+#content img {
+    width: 95%;
+    margin-bottom: 10px
+}
+.breadcrumb {
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7
+}
+.icon-bow {
+    display: block;
+    width: 32px;
+    height: 21px;
+    background: #fff url(content/index.jpg) no-repeat 50% 50%;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 0 30px
+}
+#comments {
+    font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+    border-top: 1px solid #e8e8e8
+}
+#comments .media {
+    marging-bottom: 30px
+}
+#comments .media .media-body p {
+    text-align: justify
+}
+.avatar {
+    width: 60px
+}
+#sidebar p {
+    text-indent: 30px
+}
+.title-line {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+.title-line h3 {
+    line-height: 1;
+    position: relative;
+    bottom: -13px;
+    background: #fff;
+    display: inline;
+    padding-right: 15px
+}
+.widget-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    border-top: 5px solid #1a1a1a;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent
+}
+.widget-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #1a1a1a
+}
+.widget-content {
+    border: 1px #e5e5e5 solid;
+    border-top-width: 0
+}
+.widget__follow-list {
+    padding: 27px 27px;
+    overflow: hidden
+}
+.widget__follow-list>li {
+    float: left;
+    width: 99px;
+    text-align: center
+}
+.widget__follow-list .item {
+    display: block;
+    margin: 21px 0 0;
+    text-transform: uppercase;
+    font-family: Georgia;
+    letter-spacing: 1px;
+    color: #aaa;
+    -webkit-transition: color .2s ease-out, background-position .1s ease-out .1s;
+    transition: color .2s ease-out, background-position .1s ease-out .1s
+}
+.widget__follow-list .item .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-color: transparent;
+    background-image: url(../content/sprite-reseaux.png);
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+    background-color: #1a1a1a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color .1s ease-out;
+    transition: background-color .1s ease-out
+}
+.widget__follow-list .item .name {
+    display: block
+}
+.widget__follow-list .item:hover .icon {
+    background-color: #959494;
+    cursor: pointer
+}
+.widget__follow-list .item.is-facebook .icon {
+    background-position: 6px 6px
+}
+.widget__follow-list .item.is-twitter .icon {
+    background-position: -65px 4px
+}
+.widget__follow-list .item.is-instagram .icon {
+    background-position: -143px 4px
+}
+.widget__follow-list .item.is-google .icon {
+    background-position: 4px -66px
+}
+.widget__follow-list .item.is-blogovin .icon {
+    background-position: -67px -66px
+}
+.widget__follow-list .item.is-youtube .icon {
+    background-position: -139px -66px
+}
+.widget {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+.post__footer a {
+    text-decoration: none
+}
+.post__footer {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 30px
+}
+.post-list {
+    display: block;
+    width: 30px;
+    padding: 32px 0 0;
+    text-align: center;
+    font-family: Gergio;
+    color: #000;
+    background-color: transparent;
+    background-image: url(../content/sprite-common.png);
+    background-repeat: no-repeat
+}
+.post-list .item.is-facebook {
+    background-position: 0 -390px
+}
+.post-list .item.is-twitter {
+    background-position: -70px -390px
+}
+.post-list .item.is-instagram {
+    background-position: -140px -390px
+}
+.post__footer {
+    width: 100%;
+    margin: 32px 0 0;
+    font-family: NovecentowideNormalRegular;
+    letter-spacing: 2px;
+    color: #aaa
+}
+.post__footer a {
+    color: #444
+}
+.post__footer a:hover {
+    color: #aaa
+}
+.post__comments {
+    text-align: right;
+    line-height: 1.2;
+    margin-right: 30px
+}
+.post__comments a {
+    color: #444
+}
+.post__comments a span {
+    color: #aaa
+}
+.post__footer-social.has-border>li:first-child:before,
+.post__footer-social.has-border>li:last-child:after {
+    content: "";
+    position: absolute;
+    width: 97px;
+    height: 1px;
+    background-color: #e5e5e5;
+    display: block;
+    top: 14px
+}
+.post__footer-social>li:first-child:before {
+    left: -117px
+}
+.post__footer-social>li:last-child:after {
+    right: -117px
+}
+.post__footer-social>li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+.post__footer-social>li+li {
+    margin: 0 0 0 10px
+}
+.post__footer .post__footer-social.single-share>li {
+    display: block;
+    margin: 0 0 15px
+}
+body.single .post__footer .post__footer-social {
+    position: fixed
+}
+.post__footer-social {
+    padding: 0 0 0 30px
+}
+.post__footer-social .item {
+    display: block;
+    width: 30px;
+    padding: 32px 0 0;
+    text-align: center;
+    font-family: NovecentowideNormalRegular;
+    color: #aaa;
+    background-color: transparent;
+    background-image: url(../content/sprite-common.png);
+    background-repeat: no-repeat
+}
+.post__footer-social .item.is-facebook {
+    background-position: 0 -390px
+}
+.post__footer-social .item.is-twitter {
+    background-position: -70px -390px
+}
+.post__footer-social .item.is-pinterest {
+    background-position: -140px -390px
+}
+.post__footer-social.no-background .item {
+    padding: 0 0 0 16px
+}
+.post__footer-social.no-background>li+li {
+    margin: 0 0 0 19px
+}
+.post__footer-social.no-background .item.is-facebook {
+    background-position: 0 -530px;
+    cursor: pointer
+}
+.post__footer-social.no-background .item.is-facebook:hover {
+    background-position: 0 -48px
+}
+.post__footer-social.no-background .item.is-twitter {
+    background-position: -57px -530px
+}
+.post__footer-social.no-background .item.is-twitter:hover {
+    background-position: -1px -87px
+}
+.post__footer-social.no-background .item.is-pinterest {
+    background-position: -115px -530px
+}
+.post__footer-social.no-background .item.is-pinterest:hover {
+    background-position: 0 -345px
+}
+.post__footer-social.no-background.is-white .item.is-facebook {
+    background-position: -171px -528px
+}
+.post__footer-social.no-background.is-white .item.is-twitter {
+    background-position: -228px -528px
+}
+.post__footer-social.no-background.is-white .item.is-pinterest {
+    background-position: -283px -528px
+}
+.post__footer-social.no-background.is-white .item:hover {
+    opacity: .7
 }
