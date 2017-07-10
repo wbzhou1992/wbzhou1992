@@ -2,15 +2,10 @@
     margin: 0;
     padding: 0
 }
+
 body{
-	font-size: 10px;
-}
-@font-face {
-    font-family: 'GFS Didot';
-    font-style: normal;
-    font-weight: 400;
-    src: local('GFS Didot Regular'), local('GFSDidot-Regular'), url(Novecentowide-DemiBold-webfont.woff) format('woff');
-    unicode-range: U+0370-03FF
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 .header {
     border-bottom: 3px #d1d1d1 solid;
@@ -37,12 +32,12 @@ body{
     z-index: 5;
     position: relative;
     vertical-align: middle;
-    height: 40px
+    height: 40px;
+    font-size:12px;
 }
 .mainmenu {
     height: 100%;
     text-transform: uppercase;
-    font-family: "GFS Didot";
     font-weight: 400;
     letter-spacing: 3px
 }
@@ -102,7 +97,7 @@ body{
     font-weight: 700;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Cormorant SC', serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 .header .cm-item {
     color: #fefefe;
@@ -152,7 +147,6 @@ body{
     bottom: 0;
     left: 0;
     text-align: center;
-    font-family: 'GFS Didot';
     font-style: italic;
     line-height: 38px;
     color: #fff;
@@ -352,7 +346,6 @@ f. .search-header {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'GFS Didot';
     font-weight: bolder;
     letter-spacing: 3px;
     color: #fff;
@@ -370,17 +363,14 @@ select {
 .search-header input::-webkit-input-placeholder {
     color: #fff;
     text-align: center;
-    font-family: 'GFS Didot';
 }
 .search-header input:-moz-placeholder {
     color: #fff;
     text-align: center;
-    font-family: 'GFS Didot';
 }
 .search-header input:-ms-input-placeholder {
     color: #000;
     text-align: center;
-    font-family: 'GFS Didot';
 }
 .search-header {
     margin: 0;
@@ -502,7 +492,7 @@ select {
     #main-menu {
         width: 165px;
         position: absolute;
-        text-align: 
+        text-align: center;
         padding: 0;
         border-bottom: solid 3px #d1d1d1;
         background: #1a1a1a url(../content/icon-menu.png) no-repeat 10px 11px
@@ -541,10 +531,11 @@ select {
 	margin-left: 33px;
 }
     #main-menu ul {
-        width: 150px;
+        width: 165px;
         position: absolute;
         padding: 0;
-        left: 160px;
+        left: 152px;
+        top:-40px;
         border-bottom: solid 3px #d1d1d1
     }
     .submenu--scroll:before {
@@ -554,8 +545,14 @@ select {
         display: none
     }
 }
-.main-media p {
-    margin-bottom: 50px
+#main-media p {
+    
+    margin-bottom: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
 }
 .info {
     margin-bottom: 30px;
@@ -664,7 +661,6 @@ select {
 }
 #content {
     margin-bottom: 10px;
-    font-size: 15px;
     text-align: justify;
     font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
     text-indent: 30px
