@@ -342,7 +342,7 @@ f. .search-header {
 }
 .search-header input {
     width: 100px;
-    height: 40px;
+    height: 30px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -368,10 +368,7 @@ select {
     color: #fff;
     text-align: center;
 }
-.search-header input:-ms-input-placeholder {
-    color: #000;
-    text-align: center;
-}
+
 .search-header {
     margin: 0;
     padding: 0
@@ -553,6 +550,22 @@ select {
     display: -webkit-box;
     -webkit-line-clamp:3;
     -webkit-box-orient: vertical;
+}
+#main-media p {
+    position:relative;
+    line-height:1.4em;
+    /* 3 times the line-height to show 3 lines */
+    height:4.2em;
+    overflow:hidden;
+}
+#main-media p::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
 }
 .info {
     margin-bottom: 30px;
@@ -953,4 +966,7 @@ body.single .post__footer .post__footer-social {
 }
 .post__footer-social.no-background.is-white .item:hover {
     opacity: .7
+}
+.label{
+  font-size:12px!important;
 }
