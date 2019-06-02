@@ -1,0 +1,529 @@
+/*
+ * custom css
+ */
+a:hover, a:active {
+    text-decoration: none;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue",Arial,"Hiragino Sans GB",STHeiti,"Microsoft YaHei";
+  -webkit-font-smoothing:antialiased;
+  color: #666;
+}
+ul,ol{
+  list-style: none;
+  margin: 0;
+}
+h1{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #2479CC;
+}
+a:visited{
+  color: #2479CC;
+}
+input{
+  padding: 0;
+}
+a:hover{
+  color: #2479CC;
+}
+.sidebar{
+  width: 250px;
+  height: 100%;
+  background: #202020 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main{
+  float: left;
+  margin-left: 250px;
+  padding: 0 40px;
+  width: 70%;
+}
+.main section{
+  margin: 30px 0;
+}
+.wrap li a{
+  color: #999;
+}
+.logo{
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.logo a{
+  
+  margin: 0 auto;
+}
+.logo a,.logo img{
+  width: 140px;
+  height: 140px;
+  display: block;
+  border-radius: 70px;
+  background: #fff;
+}
+.logo span{
+  display: block;
+  color: #999;
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.buttons li{
+  height:45px;
+  line-height: 45px;
+  font-size: 16px;
+  width: 100%;
+}
+.buttons li a i{
+  font-size: 20px;
+  width: 25px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* blogs */
+.meta{
+  float: right;
+  position: relative;
+  line-height: 28.8px;
+  font-size: 14.4px;
+  text-align: right;
+  color: #555;
+
+}
+.meta .comments{
+  color: #999;
+}
+.post{
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.article{
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.post .title{
+  margin-bottom: 25px;
+}
+.post .title a,.article .title{
+  color: #333;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.post .title a:hover{
+  color: #2479CC;
+}
+.more a{
+  color: #2479CC;
+}
+.more a:visited{
+  color: #2479CC;
+}
+.pagenav{
+  position: relative;
+  line-height: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
+}
+#prev{
+  float: left;
+  color: #2479CC;
+}
+#next{
+  float: right;
+  color: #2479CC;
+}
+.pagenav .center{
+  text-align: center;
+  width: 80px;
+  margin: auto;
+
+}
+.pagenav .center a{
+  color: #2479CC;
+}
+.row{
+  width: 100%;
+}
+
+.row .headline,.row .summary{
+  width: 100%;
+  outline: none;
+}
+.row .headline{
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-indent: 1em;
+  border: 1px solid #ccc;
+  color: #666;
+  font-weight: bold;
+}
+.label{
+  line-height: 40px;
+}
+
+.button{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.button{
+  display: inline-block;
+  width: 100px;
+  background: #2479CC;
+  color: #fff;
+  text-align: center;
+  line-height: 47px;
+
+}
+.btns{
+  margin: 40px 40px 0;
+  padding: 0 40px 40px;
+  line-height: 50px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.btns a:visited{
+  color: #fff;
+}
+.button:hover{
+  color: #fff;
+  background: #999;
+}
+
+.create{
+  line-height: 28px;
+  display: inline-block;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  background: #009dd8;
+  border: 1px solid rgba(0,0,0,.2);
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+  background-image: linear-gradient(to bottom,#00b4f5,#008dc5);
+  color: #fff;
+  margin-left: 40px;
+  
+}
+.manage-content a{
+  color: #fff;
+}
+.manage-content a:hover{
+  color: #fff;
+}
+.manage-table{
+  margin: 20px;
+  width: 100%;
+}
+.manage-table a{
+  color: #2479CC;
+}
+.manage-table a:hover{
+  color: #2479CC;
+  
+}
+tr{
+  line-height: 40px;
+  border-bottom: 1px solid 
+}
+th{
+  border-bottom: 1px solid #e5e5e5;
+}
+td{
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+.tr-1{
+  widows: 40%;
+}
+.tr-4{
+  width: 14%;
+}
+.pagination{
+  text-align: center;
+}
+.pagination>li{
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+}
+.pagination span{
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  display: inline-block;
+  text-shadow: 0 1px 0 #fff;
+  background: #fafafa;
+  color: #666;
+  text-align: center;
+  width: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  
+}
+.pagination span:hover{
+  background: #fff;
+}
+.pagination .active span{
+  background: #009dd8;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+  background-image: linear-gradient(to bottom,#00b4f5,#008dc5);
+  color: #fff;
+  cursor: auto;
+}
+.pagination li a {
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  border-bottom-color: rgba(0,0,0,.3);
+  background-image: linear-gradient(to bottom,#fff,#eee);
+  display: inline-block;
+  text-shadow: 0 1px 0 #fff;
+  background: #f7f7f7;
+  color: #666;
+  text-align: center;
+  width: 28px;
+  line-height: 28px;
+  cursor: default;
+}
+.pagination li a:hover{
+  background: #fff;
+  color: #666;
+  cursor: pointer;
+}
+.pagination .disabled span{
+  text-shadow: 0 1px 0 #fff;
+  color: #999;
+  cursor: default;
+}
+
+.hiddenprev,.hiddennext{
+  display: none;
+}
+blockquote{
+  display: block;
+  border-left: 8px solid #d0e5f2;
+  padding: 5px 10px;
+  margin: 10px 0;
+  line-height: 1.4;
+  font-size: 16px;
+  background: #f1f1f1;
+
+}
+#editor1{
+  height: 220px;
+}
+
+#editor1 .w-e-text-container{
+  height: 200px!important;
+}
+#editor{
+  height: 830px;
+}
+#editor .w-e-text-container{
+  height: 800px!important;
+}
+.footer{
+  height: 50px;
+  margin: 40px;
+  text-align: center;
+  border-top: 1px solid #fff
+}
+article pre{
+  font-family: "Consolas","Liberation Mono",Courier,monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5d6a6a;
+    border-left: 5px solid #ccc;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    position: relative;
+    overflow: hidden
+}
+.form-container{
+  height:700px;
+  position: relative;
+}
+.form{
+  height: 300px;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+ 
+}
+.form-row{
+  line-height: 50px;
+  text-align: center;
+}
+.tooltip{
+  line-height: 60px;
+  border-bottom: 1px solid #999;
+  padding-left:20px; 
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.signin{
+  background: url(../images/back.jpg) no-repeat center top;
+  background-size: cover;
+}
+.form input{
+  line-height: 34px;
+  width: 78%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  padding: 0 4px;
+
+}
+.email,.passwd{
+  margin: 0 20px;
+}
+
+.login{
+  line-height: 40px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+}
+.login button{
+  width: 80%;
+  height: 36px;
+  background: #2589f3;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+
+
+}
+.form-row i{
+  border: 1px solid #ddd;
+  background: #eee;
+  display: inline-block;
+  line-height: 34px;
+  vertical-align: middle;
+  position: relative;
+  left: 5px;
+  width: 30px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  text-align: center;
+}
+.user{
+  display: inline-block;
+  float: right;
+  width: 160px;
+  margin-bottom: 10px;
+}
+.user li{
+  float: left;
+  width:80px;
+}
+.user li a{
+  color: #000;
+}
+.user li a:hover{
+  color: #000;
+}
+.user .logout{
+  float: right;
+}
+.comment-display{
+  padding: 10px;
+}
+.comment-display .user-commnet img{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+.comment-meta{
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+}
+textarea,input{
+  width: 100%;
+  height: 70px;
+  background: 0 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 0;
+  font-size: 14px;
+  background:none;
+  resize: none;
+  text-align: left;
+  line-height: normal;
+  -webkit-box-shadow:none;
+  outline: none;
+}
+.comment-wrap{
+  margin: 0 8px;
+  height: 96px;
+  border: 1px solid #4398ed;
+  border-radius: 4px;
+
+}
+.btn{
+  width: 60px;
+  height: 30px;
+  padding:4px 6px;
+  background: #f7f7f7;
+  border: 1px solid #4398ed;
+  color: #666;
+  outline: none;
+  float: right;
+  margin: 4px 40px;
+}
+#comment{
+  margin-top: 20px;
+}
+.divider{
+  margin: 40px 0 0;
+  height: 30px;
+
+}
+.d-right{
+  float: right;
+  font-size: 16px;
+  border-bottom: 1px solid #4398ed;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.d-left{
+  display: inline-block;
+  padding: 8px 4px;
+  height: 30px;
+  color: #4398ed;
+  font-size: 16px;
+  border-bottom: none;
+  position: relative;
+  top: -22px;
+}
